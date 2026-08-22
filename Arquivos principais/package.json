@@ -1,0 +1,19 @@
+{
+  "name": "smart-life",
+  "version": "0.4.1",
+  "private": true,
+  "scripts": {
+    "serve": "npx serve www",
+    "cap:sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/app": "^7.1.0",
+    "@capacitor/core": "^7.4.0",
+    "@capacitor/local-notifications": "^7.0.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
+    "serve": "^14.2.4"
+  }
+}
