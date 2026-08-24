@@ -1,0 +1,49 @@
+name: Build Android APK
+run-name: Smart Life v0.4.9
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "Arquivos principais"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Instalar dependências
+        run: npm install
+      - name: Criar projeto Android
+        run: npx cap add android
+      - name: Ativar salvamento nativo em Downloads
+        run: python3 android-native/install-native-downloads.py
+      - name: Aplicar identidade visual do Smart Life
+        run: |
+          cp -R android-icon/mipmap-* android/app/src/main/res/
+          printf '%s\n' '<resources><color name="ic_launcher_background">#050806</color></resources>' > android/app/src/main/res/values/ic_launcher_background.xml
+      - name: Sincronizar Capacitor
+        run: npx cap sync android
+      - name: Gerar APK debug
+        run: cd android && ./gradlew assembleDebug
+      - name: Nomear APK com a versão atual
+        id: apk
+        run: |
+          APP_VERSION="$(node -p "require('./package.json').version")"
+          APK_NAME="Smart-Life-v${APP_VERSION}.apk"
+          mv android/app/build/outputs/apk/debug/app-debug.apk "android/app/build/outputs/apk/debug/${APK_NAME}"
+          echo "artifact_name=Smart-Life v${APP_VERSION}" >> "$GITHUB_OUTPUT"
+          echo "apk_path=Arquivos principais/android/app/build/outputs/apk/debug/${APK_NAME}" >> "$GITHUB_OUTPUT"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.apk.outputs.artifact_name }}
+          path: ${{ steps.apk.outputs.apk_path }}
