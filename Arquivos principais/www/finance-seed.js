@@ -1,0 +1,1 @@
+window.SMART_LIFE_FINANCE_SEED={format:"smart-life-finance",schema:1,sourceApp:"Smart Life",sourceVersion:"0.4.8",importedAt:"",selectedOwnerId:0,users:[],accounts:[],cards:[],categories:[],expenses:[],incomes:[],internal_transfers:[],loans:[],loan_installments:[],recurring_expenses:[],recurring_incomes:[],goals:[],budgets:[],import_rules:[]};
