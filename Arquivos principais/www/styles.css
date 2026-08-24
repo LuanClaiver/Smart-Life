@@ -544,7 +544,7 @@ button:disabled,[aria-disabled="true"]{cursor:not-allowed}
 @media(max-width:780px){.toolRewardGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:430px){.toolRewardGrid{grid-template-columns:1fr}.projectChecklistHead{gap:10px}.projectChecklistHead .link{white-space:nowrap}}
 
-/* Smart Life v0.5.1 — navegação contextual, compartilhamento e finanças */
+/* Smart Life v0.5.2 — navegação contextual sem reposicionamento dentro da própria seção */
 .focusItemHalo{position:relative;z-index:3;border-color:var(--green)!important;animation:focusItemFloat 3.2s ease both!important}
 .focusItemHalo:after{content:"";position:absolute;z-index:-1;inset:-7px;border:2px solid var(--green);border-radius:inherit;pointer-events:none;animation:focusItemAura 1.05s ease-in-out 3}
 @keyframes focusItemFloat{0%,100%{transform:translateY(0)}18%,58%{transform:translateY(-5px)}38%,78%{transform:translateY(2px)}}

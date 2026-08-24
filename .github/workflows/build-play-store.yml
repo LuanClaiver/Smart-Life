@@ -1,5 +1,5 @@
 name: Build Play Store AAB
-run-name: Smart Life v0.5.1 • Play Store
+run-name: Smart Life v0.5.2 • Play Store
 
 on:
   workflow_dispatch: {}

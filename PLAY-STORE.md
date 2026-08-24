@@ -33,6 +33,6 @@ O APK antigo foi assinado por uma chave temporária do GitHub e não poderá ser
 
 ## 4. Gerar o pacote
 
-Abra **Actions → Build Play Store AAB → Run workflow**. Ao terminar, baixe o artefato **Smart-Life v0.5.1 - Play Store**.
+Abra **Actions → Build Play Store AAB → Run workflow**. Ao terminar, baixe o artefato **Smart-Life v0.5.2 - Play Store**.
 
 Antes de publicar, revise a política de privacidade, os formulários de segurança de dados, os ícones, as capturas de tela e os requisitos atuais de teste do Google Play Console.

@@ -48,6 +48,6 @@ Volte à execução **Criar assinatura Android (uma vez)** e exclua a execução
 
 ## 6. Gerar o APK definitivo
 
-Abra **Actions → Build Android APK → Run workflow**. O download será disponibilizado como `Smart-Life-APK-v0.5.1`.
+Abra **Actions → Build Android APK → Run workflow**. O download será disponibilizado como `Smart-Life-APK-v0.5.2`.
 
 O APK antigo, assinado pela chave temporária anterior, precisa ser desinstalado uma única vez. Faça backup, instale este primeiro APK permanente e importe os dados. As versões seguintes poderão usar **Atualizar** normalmente.

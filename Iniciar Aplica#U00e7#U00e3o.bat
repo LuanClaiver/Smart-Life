@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title Smart Life v0.5.1
+title Smart Life v0.5.2
 cd /d "%~dp0"
 
 set "APP_FILE=%~dp0Arquivos principais\www\index.html"

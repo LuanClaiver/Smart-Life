@@ -4,7 +4,7 @@ cd /d "%~dp0"
 title Smart Life - Enviar para GitHub
 
 echo ==============================================
-echo       SMART LIFE v0.5.1 - GITHUB
+echo       SMART LIFE v0.5.2 - GITHUB
 echo ==============================================
 echo.
 
@@ -71,8 +71,8 @@ echo Nenhuma alteracao nova para commit.
 goto ENSURE_MAIN
 
 :COMMIT
-echo Criando commit Smart Life v0.5.1...
-git commit -m "Smart Life v0.5.1"
+echo Criando commit Smart Life v0.5.2...
+git commit -m "Smart Life v0.5.2"
 if errorlevel 1 goto ERROR
 
 :ENSURE_MAIN

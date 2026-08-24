@@ -2,7 +2,7 @@
   <img src="docs/images/smart-life-icon.png" alt="Ícone do Smart Life" width="150">
 </p>
 
-<h1 align="center">Smart Life v0.5.1</h1>
+<h1 align="center">Smart Life v0.5.2</h1>
 
 <p align="center">
   <strong>Sua rotina transformada em uma jornada de evolução.</strong><br>
@@ -101,7 +101,7 @@ Ao enviar a versão para a branch `main`, o GitHub Actions inicia a compilação
 
 1. Abra a aba **Actions** do repositório.
 2. Aguarde a execução **Build Android APK** terminar.
-3. Baixe o artefato **Smart-Life-APK-v0.5.1**. Dentro dele estará o arquivo `Smart-Life-v0.5.1.apk`.
+3. Baixe o artefato **Smart-Life-APK-v0.5.2**. Dentro dele estará o arquivo `Smart-Life-v0.5.2.apk`.
 
 O botão **Run workflow** continua disponível apenas para refazer manualmente uma compilação.
 
@@ -116,7 +116,7 @@ O botão **Run workflow** continua disponível apenas para refazer manualmente u
 - A IA só recebe os grupos de dados autorizados nas Configurações.
 - Sugestões da IA precisam de confirmação antes de alterar o aplicativo.
 
-## 🆕 Novidades v0.5.1
+## 🆕 Novidades v0.5.2
 
 - A Agenda abre mostrando o dia atual; os dias anteriores aparecem depois dos próximos dias da semana.
 - Missões, hábitos e projetos abrem no card correto com rolagem automática e um halo animado na cor do tema.
