@@ -1,0 +1,11 @@
+Arquivos principais/node_modules/
+Arquivos principais/android/
+Arquivos principais/.gradle/
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+Thumbs.db
+Arquivos GitHub (Ignore)/
+*.db
+*.smartlife-finance.json
